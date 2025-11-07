@@ -5,13 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>취미</title>
     <style>
+      @font-face {
+        font-family: "GMarketSans";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+          format("woff");
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      * {
+        font-family: "GMarketSans";
+      }
+
       body {
         background-color: #e9edf3;
         font-family: "GMarketSans", sans-serif;
         margin: 0;
-        padding: 40px 0;
+        padding: 50px 0;
       }
 
+      h2 {
+        margin-bottom: 30px;
+      }
       .hobby-section {
         max-width: 900px;
         margin: 0 auto;
@@ -70,6 +85,12 @@
         text-align: center;
         font-weight: bold;
       }
+
+      nav {
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
       nav ul {
         display: flex;
         list-style: none;
@@ -138,7 +159,7 @@
       </ul>
     </nav>
     <section class="hobby-section">
-      <h2>취미</h2>
+      <div class="title"><h2>취미</h2></div>
       <div class="hobby-grid">
         <div class="hobby-card">
           <div class="ping">🏓</div>
