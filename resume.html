@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이력서</title>
+    <style>
+      @font-face {
+        font-family: "GMarketSans";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+          format("woff");
+        font-weight: 500;
+        font-display: swap;
+      }
+
+      body {
+        background-color: #8fabd4;
+        font-family: GMarketSans;
+        flex-direction: column;
+      }
+      section {
+        padding: 30px;
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+        max-width: 800px;
+      }
+
+      header {
+        display: flex;
+        gap: 30px;
+        border-bottom: 1px solid black;
+      }
+      .rion-image {
+        border: 0.5px solid #8fabd4;
+        border-radius: 16px;
+      }
+
+      .name {
+        font-size: 200%;
+        font-weight: bold;
+      }
+      .main-title,
+      #title2 {
+        font-size: 170%;
+        font-weight: bold;
+      }
+
+      main {
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+      }
+
+      .school {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        font-size: 120%;
+      }
+      .school p {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        body {
+          display: flex;
+          justify-content: center;
+        }
+        section {
+          font-size: 90%;
+          max-width: 90%;
+        }
+        .rion-image {
+          width: 90%;
+          height: auto;
+        }
+      }
+
+      @media (max-width: 767px) {
+        body {
+          display: flex;
+          justify-content: center;
+        }
+        section {
+          font-size: 70%;
+          max-width: 70%;
+        }
+        .rion-image {
+          width: 70%;
+          height: auto;
+        }
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+        justify-content: center;
+      }
+
+      nav a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav li {
+        padding: 20px;
+        background-color: white;
+        border-radius: 16px;
+
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      nav li:hover {
+        transform: translateY(-3px);
+        transition: transform 0.4s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">메인</a></li>
+        <li><a href="./link.html">즐겨찾기</a></li>
+        <li><a href="./contact.html">연락처</a></li>
+        <li>
+          <a
+            href="https://www.notion.so/kng3oo/K_IT_pj-279fb117cc1b80caba53e9c9f2975a45"
+            target="_blank"
+            >프로젝트</a
+          >
+        </li>
+        <li><a href="./hobby.html">취미</a></li>
+      </ul>
+    </nav>
+    <section>
+      <header>
+        <div>
+          <img
+            src="https://item.kakaocdn.net/do/a7fd7c0630f8aea8419a565fb2773bbc82f3bd8c9735553d03f6f982e10ebe70"
+            alt="rion-image"
+            class="rion-image"
+          />
+        </div>
+        <div class="name-address">
+          <p class="name">김대영</p>
+          <p class="address">📍 경기도 남양주시 경춘북로 558번길 12</p>
+          <p>📞 010-4946-0829</p>
+          <p>📧 idy970829@gmail.com</p>
+        </div>
+      </header>
+      <main>
+        <p class="main-title">학력</p>
+        <div class="school">
+          <p class="km">
+            국민대학교<br />
+            퇴계원고등학교
+          </p>
+          <p id="major">
+            자동차공학과 (2016.03 ~ 2025.02) <br />
+            (2013.03 ~ 2016.02)
+          </p>
+        </div>
+      </main>
+      <div>
+        <p id="title2">자격증</p>
+        <div>
+          <p>AI-900: Microsoft Certified: Azure AI Fundamentals</p>
+          <p>DP-900: Microsoft Certified: Azure Data Fundamentals</p>
+          <p>AZ-900: Microsoft Certified: Azure Fundamentals</p>
+          <p>채워 가는중....🏃‍♂️</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>즐겨찾기</title>
+    <style>
+      body {
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #e9edf3;
+        align-items: center;
+      }
+
+      .header {
+        font-size: 28px;
+        font-weight: 700;
+        color: black;
+        background-color: #efece3;
+        padding: 12px 30px;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        border: 1.5px solid #d3d3d3;
+        margin-bottom: 70px;
+      }
+      .contact-section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        max-width: 540px;
+        margin-bottom: 60px;
+      }
+
+      .contact-box {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        border: 2px solid black;
+      }
+
+      .contact-box p {
+        width: 100%;
+        margin: 0 0 6px;
+      }
+      .contact-icon {
+        width: 22px;
+        height: 22px;
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+
+      .contact-box a,
+      .contact-text {
+        color: #1e293b;
+        text-decoration: none;
+        font-weight: 500;
+        word-break: break-all;
+        transition: color 0.3s ease;
+        font-weight: bold;
+      }
+
+      .address {
+        display: inline-block;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+        justify-content: center;
+      }
+
+      nav a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav li {
+        padding: 20px;
+        background-color: white;
+        border-radius: 16px;
+
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      nav li:hover {
+        transform: translateY(-3px);
+        transition: transform 0.4s ease;
+      }
+      .address:hover {
+        color: #2563eb;
+        transform: translateY(-3px);
+        transition: transform 0.4s ease;
+      }
+
+      footer {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">메인</a></li>
+        <li><a href="./resume.html">이력서</a></li>
+        <li><a href="./contact.html">연락처</a></li>
+        <li>
+          <a
+            href="https://www.notion.so/kng3oo/K_IT_pj-279fb117cc1b80caba53e9c9f2975a45"
+            target="_blank"
+            >프로젝트</a
+          >
+        </li>
+        <li><a href="./hobby.html">취미</a></li>
+      </ul>
+    </nav>
+    <h1 class="header"><div class="contact-header">🌟 즐겨찾기</div></h1>
+    <div class="contact-section">
+      <div class="contact-box">
+        <p>다양한 AI 모델에 관심이 있다면?</p>
+        <div>
+          <img
+            src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+            alt="huggingface_logo"
+            class="contact-icon"
+          />
+          <a href="https://huggingface.co/" target="_blank" class="address">
+            https://huggingface.co/
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <p>빠른 파일 변환에는?</p>
+        <div>
+          <img
+            src="https://tools.pdf24.org/static/img/pageIcons/svg/default.svg?v=5cae54fd"
+            alt="pdf24tools-icon"
+            class="contact-icon"
+          />
+          <a href="https://tools.pdf24.org/ko/" target="_blank" class="address">
+            https://tools.pdf24.org/ko/
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <p>이미지나 스크린샷으로 어떤 폰트인지 찾고 싶다면?</p>
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACcBAMAAAB4lt9+AAAAJ1BMVEVHcExAc/hAcvdAcvhAcvc/cf9AcvdAc/dAcvc/cflAcvdAcvhBc/dXVABPAAAADHRSTlMAPL9YhQ+l8uEi0W/tBLbUAAAENklEQVRo3u2azU8TQRTAp5atLnBoA34lPZiGGDQ9FCWeOIg2SrQHlBg9cCCCMYYeQAOJyR6I8ePSA9EDRDmowQOxB7wQTThIW7p1mT9KpDO7s93Zbee9iTGx70S2yy+z877fDCGC3Nm5WKKukFDx3ml8nk+GvGRcsagoneAOxZ6VvhN/TCkER+myZIGxMoXiaCXAM7MUjqP11ZZ9K1IMjtYmfS+sUxyObvk2zsLiGuL2jVEsji56P/dQPI7m3J93deCqrgFTHTjKdy+tB/ec2Zzn9s74JFESY9BzpkrzUcJ9MKsIawYO99+v+r/1CQHJW//X8uU+I0DhVlsX9dpYheJcn/qj2xMyr1MT7vEz3lKdSTjOZLbx6/BvFuiWCEI23M0zW2waJH0sbbjuXyEoKfM19XqfjZAxrotpTykIYebxkXOTOBzbvH1SaNowjkYMHvOaKayGxDFzO2A6qWJxBWZ4lg7FctVWGO4nFteMcg4L1GjcBtOoJlw/yy9dXBf3P+Big/l8JjOUT2nAxUaHvfIqqiLqBGe2tFX1HAZ3qhSoz3NgnDnRrt5XwU1lpRVrDYgLKZjDEjIUV9eLYxWwNtxeJC46NcmUi8h00c0XDPc0fzkvtPYLKFxj/Mioi8FeDoLjfuV10HUEzt7mD9Y66P3a4rYkDX4SjKsLIc5torfBuJlg/Quro+MTre1BH8edAxnyh6K/FYpx3AowPY0mpT07Ou2J5XQX18X9DdzAYf2UyZzPj2jAxXa8OsW2sLhg0YPAGd/lqQyIu0l14s5QnbgeqhVX1IpLUK24glZcnGrF3ReOS+ZGUqnU4I1hBK4gOSuB+6whO4mA4+Ky4hCOS8iKOTiuX1aPwHFpWfEFx/Hiy9ET3AtUMmHF42r/NE7zx9riwzJas6JT3KV4u3vl+Z0Fx027LQ6PAPEsIt71uv/7qfngXQkTPoU0tnmWmAO3cNHYjIjttJKZy/+AFV9hUgOqVhEXsh2JNriq2qTCkJwnf42YV7QbfJwO0Jx7FhwXzNuPxMpgX3VC1rq8A0IehNte+4Gb31acpO+AXhkn+Lw7sPDGCyvq08Up4Vg551/xy1XA7DPGXXWT58fYURH5+ht4MnstM3T7pNi1XE8lu0PyLq6LU8BZ0mgILBtsUtJzPstPQMsRk2/lROqw/Iw+jN5l1WUBPgsONtM1hrWxOIulpzRiLh9Io3vkOGba2loPLpBjVIdq07yD69N5gSTnFoaozfOut2i5fLPmHT1ovhrEi/QvcNy6MIzXeK0qJ7Zaizh/5dah+Uoa8sLcJeo/ZRGu81XGVWHB63z8ylbHlw0N+ftL0dMwRZydDDTDGNxemzGnIk5w+jE8riqzazDO9kWk91jcBf8bRRzuoNWNsxicEwgf8TIcV5G0BvEsFLcsDW3GjgXBNebDAoc5+vCNGs5+Metb2m9mj7sqAQ6rpwAAAABJRU5ErkJggg=="
+            alt="fontfont-icon"
+            class="contact-icon"
+          />
+          <a class="address" href="https://fontfont.app/" target="_blank">
+            https://fontfont.app/
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <p>한국인을 기준으로 한 여러가지 AI 학습용 데이터셋이 필요하다면?</p>
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABPlBMVEX////u7u+5vb2lqqqhpqWytLPa29qmqKpBTE1zenuXnZ6hqaqcpKKEiYdhZGJ9f33p6ehzdX1naXD6///i6emZnJrU1NP39/ZdYm2cmpz//vnK5eZ60tjF5+zt9vitsbNnY2WOjJH/79//7NX/48ZYvblRwsVaxc5ixtav3OfZ6/LFxsj98ur/16f/u1b/w2r/zIJ/zeC/3OT/5NH/v29SoKhTtsaWyNa4ztLP2tXAwLVtb2ze0MT/1Jf/zXj3o2iZbmtZna5vvNTKvK7Yy7Deyp/uhmLrel6psZjWwYiAjYCdvsKKvbvetmH/t1L1jHDylnletdNEoLnn2LKNtsXVmoXodnD/sZX/vKypsqiPqcPLcIzWboDXbW7Qsq5RYljEeJzLYYG2fmpof3bfu8rHhZzLmqrfzNFsbIGGhZbFsy9QAAABQklEQVR4AZzNNVYEQQBF0f+Bqerxacclxd0tQ5aAuyyODeAxLAFPcHd36oxG3PZ+Jfg3QuEXfKTxOUWUP5HfLpFANwQA0zQtO+TEz3TJA2SD/D3vj2OjHtnJ1vgHd9z7wLc0ACiR/lIzEAgAgPah+e8yY2Z6X/P0tw8PyGsvBL9sHqnovhQ/+IjrMEngLkCs81JF57bSf8TwtUOstgCC4OKz2vOUuiwouA9T03oQjpy9+vAKFWFBkzLX/a4gChbmwt3RiDMhREBIQESANWDJdvGnpIhiZHR0YHCst66hOh8AQmkqCt3hyGh/f+f4eBN+eUJQdImJyalpIVSDE8qAWneGiBcO2VBmZ9WbmiijH5yJr2kGEFuLYj+lD7FK9JKYL68HsSK62oUlBWHDQSyqSMMw9CzEK0rDj5LPKWqLM9AWAADEQji5RpDjNwAAAABJRU5ErkJggg=="
+            alt="aihub_logo"
+            class="contact-icon"
+          />
+          <a href="https://www.aihub.or.kr/" target="_blank" class="address">
+            https://www.aihub.or.kr/
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>&copy; KDY all rights reserved.</footer>
+  </body>
+</html>
